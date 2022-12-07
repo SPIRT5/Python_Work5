@@ -14,20 +14,20 @@ def player_input (player_name):
 
 #Функция для хода робота
 def bot_input (konfet):
-    k = random.randrange (1, 28)
-    if ((konfet - k) < 57) :
-        k = konfet - 57
+    k = random.randrange (1, 29)
+    if ((konfet - k) < 56) :
+        k = konfet - 56
     if (konfet <= 56 and konfet > 29) :
         k = konfet - 29
     while (konfet - k) <= 28 and konfet > 29:
-        k = random.randrange (1, 28)
+        k = random.randrange (1, 29)
     return k
 
 name1 = input ('Введите имя первого игрока: ')
 name2 = input ('Введите имя второго игрока: ')
 
 #Жеребьевка игроков
-igrok = random.randrange (1, 2)
+igrok = random.randrange (1, 3)
 
 if igrok == 1 :
     print (f'Первый ход делает: {name1}')

@@ -19,8 +19,8 @@ def bot_input (konfet):
         k = konfet - 56
     if (konfet <= 56 and konfet > 29) :
         k = konfet - 29
-    while (konfet - k) <= 28 and konfet > 29:
-        k = random.randrange (1, 29)
+    while (konfet - k) <= 28 and konfet > 29 :
+        k = random.randrange (1, konfet)
     return k
 
 name1 = input ('Введите имя первого игрока: ')
@@ -38,14 +38,14 @@ konfet = 150
 count1 = 0
 count2 = 0
 
-while konfet > 28:
-    if igrok == 1:
+while konfet > 28 :
+    if igrok == 1 :
         hod = player_input (name1)
         count1 += hod
         konfet -= hod
         igrok = 2
         print(f'Ходил {name1}, он взял {hod}, теперь у него {count1}. Осталось на столе {konfet} конфет.')
-    else:
+    else :
         hod = bot_input (konfet)
         count2 += hod
         konfet -= hod

@@ -17,7 +17,7 @@ def bot_input (konfet):
     k = random.randrange (1, 29)
     if ((konfet - k) < 58 and konfet > 58) :
         k = konfet - 58
-    if (konfet <= 56 and konfet > 29) :
+    if (konfet <= 57 and konfet > 29) :
         k = konfet - 29
     if (konfet - k) <= 28 :
         k = random.randrange (1, konfet)
